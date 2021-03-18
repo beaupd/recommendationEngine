@@ -119,9 +119,8 @@ class EqualContentFiltering(): # Content-Based filtering
         self.conn.commit()
         cur.close()
 
-recommendEngine = EqualContentFiltering(c)
+recommendEngine = EqualContentFiltering(c)# of CollaborativeFiltering(c) #voor de andere filtereing let op de collaborative duurt vele malen langer om te vullen
 # recommendEngine.createTable()
 # recommendEngine.populateTable()
-# print(choice(equalEngine.recommendProducts("29454")))
-products = recommendEngine.recommendProducts("9945")["products"]
+products = recommendEngine.recommendProducts("9945")["products"]#random product die bij allebei goed werkt om aanbevelingen te testen
 print(choice(products))
