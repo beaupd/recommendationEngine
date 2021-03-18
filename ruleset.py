@@ -14,7 +14,7 @@ def getRows(conn, table, values=None): # functie om rows op te vragen op basis v
     cur.close()
     return rows
 
-class CollaborativeFiltering(): # Collaberitve filtering
+class CollaborativeFiltering(): # Collaborative filtering
 
     def __init__(self, conn):
         self.conn = conn
